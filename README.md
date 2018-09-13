@@ -1,3 +1,3 @@
 # Nexter
-A practice project - real state agency <br>
+A practice project - Real State Agency <br>
 Layout: CSS Grid
