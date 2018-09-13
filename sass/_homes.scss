@@ -1,0 +1,84 @@
+.homes {
+    grid-column: col-start 1/col-end 8;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 7.5rem;
+    padding: 15rem 0;
+
+    @media only screen and (max-width: $fourth) {
+        padding: 10rem 0;
+    }
+
+    @media only screen and (max-width: $fifth) {
+        padding: 5rem 0;
+    }
+}
+
+
+.home {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: $color-grey-light-1;
+    grid-gap: 3.5rem;
+    font-size: 1.4rem;
+
+    &__img {
+        width: 100%;
+        grid-row: 1/2;
+        grid-column: 1/-1;
+    }
+
+    &__icon-heart {
+        height: 2.5rem;
+        width: 2.5rem;
+        fill: $color-primary;
+        grid-row: 1/2;
+        grid-column: 2/3;
+        justify-self: end;
+        margin: 1rem;
+    }
+
+    &__name {
+        font-size: 1.7rem;
+        color: #fff;
+        background-color: $color-secondary;
+        font-family: $font-display;
+        font-weight: 400;
+        grid-row: 1/2;
+        grid-column: 1/-1;
+        text-align: center;
+        padding: 1.25rem 2rem;
+        align-self: end;
+        width: 80%;
+        justify-self: center;
+        transform: translateY(50%);
+    }
+
+    &__location,
+    &__room,
+    &__size,
+    &__key {
+
+        display: flex;
+        align-items: center;
+
+        svg {
+            width: 2.5rem;
+            height: 2.5rem;
+            fill: $color-primary;
+            margin-right: 1rem;
+            margin-left: 2rem;
+        }
+    }
+
+    &__location,
+    &__room {
+        margin-top: 2.5rem;
+    }
+
+    &__btn {
+        grid-column: 1/-1;
+    }
+}

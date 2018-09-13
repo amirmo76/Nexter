@@ -1,0 +1,91 @@
+body {
+    font-family: $font-primary;
+    font-weight: 300;
+    color: $color-grey-dark-2;
+    line-height: 1.6;
+}
+
+%heading {
+    font-family: $font-display;
+    font-weight: 400;
+}
+
+.heading-1 {
+    @extend %heading;
+    font-size: 4.5rem;
+    color: #fff;
+
+    &--light {
+        color: $color-grey-light-1;
+    }
+
+    &--dark {
+        color: $color-grey-dark-1;
+    }
+}
+
+.heading-2 {
+    @extend %heading;
+    font-size: 4rem;
+    line-height: 1;
+    
+
+    &--light {
+        color: $color-grey-light-1;
+    }
+
+    &--dark {
+        color: $color-grey-dark-1;
+    }
+}
+
+.heading-3 {
+    @extend %heading;
+    color: $color-primary;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+
+    &--light {
+        color: $color-grey-light-1;
+    }
+
+    &--dark {
+        color: $color-grey-dark-1;
+    }
+}
+
+.heading-4 {
+    @extend %heading;
+    font-size: 1.9rem;
+
+    &--light {
+        color: $color-grey-light-1;
+    }
+
+    &--dark {
+        color: $color-grey-dark-1;
+    }
+}
+
+.btn {
+    &:link,
+    &:visited {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        color: $color-grey-light-1;
+        padding: 1.5rem 3rem;
+        transition: all .25s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &--primary {
+        background-color: $color-primary;
+
+        &:hover {
+            background-color: $color-primary-dark;
+        }
+    }
+}
